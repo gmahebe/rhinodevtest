@@ -1,0 +1,30 @@
+{
+	"name": "liftoff",
+	"version": "1.0.0",
+	"license": "GPL-2.0",
+	"description": "RhinoActive's Base Theme built with Bootstrap 5.",
+	"homepage": "https://rhinoactive.com",
+	"author": "RhinoActive Inc.",
+	"scripts": {
+		"watch": "NODE_ENV=development wp-scripts start --output-path=dist"
+	},
+	"browserslist": [
+		"last 2 versions"
+	],
+	"dependencies": {
+		"@popperjs/core": "^2.11.8",
+		"bootstrap": "^5.3.1",
+		"gulp": "^5.0.0"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.11.0",
+		"archiver": "^7.0.1",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.5.1",
+		"mini-css-extract-plugin": "^2.4.5",
+		"node-sass": "^6.0.1",
+		"path": "^0.12.7",
+		"sass-loader": "^12.3.0",
+		"style-loader": "^3.3.1"
+	}
+}

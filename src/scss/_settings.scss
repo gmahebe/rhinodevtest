@@ -1,0 +1,75 @@
+$red: #dc3545;
+$black: #000;
+$white: #fff;
+$dark: #313033; // figma color name: charcoal
+$light: #f3f5fc; // figma color name: cloud
+
+$primary: $red;
+
+$font-weight-lighter: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$font-weight-black: 900;
+
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 1rem;
+$badge-font-weight: $font-weight-normal;
+$badge-color: $dark;
+$badge-border-radius: 0.25rem;
+
+$btn-font-size-sm: 0.75rem;
+
+$grid-gutter-width: 2rem;
+$grid-container-padding: (
+	xs: 1.5rem,
+	sm: 3rem,
+	md: 3.5rem,
+	lg: 4rem,
+);
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 40rem,    // 640px
+	md: 64rem,    // 1024px
+	lg: 75rem,    // 1200px
+	xl: 81.25rem, // 1300px
+	xxl: 90rem,   // 1440px
+);
+
+$spacer: 1rem;
+
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	16: $spacer * 1,
+	24: $spacer * 1.5,
+	32: $spacer * 2,
+	40: $spacer * 2.5,
+	48: $spacer * 3,
+	64: $spacer * 4,
+);
+
+$container-max-widths: (
+	xxl: 90rem
+);
+
+.container.container-padding {
+	padding: 0 map-get($grid-container-padding, 'xs');
+	@include media-breakpoint-only(sm) {
+		padding: 0 map-get($grid-container-padding, 'sm');
+	}
+
+	@include media-breakpoint-only(md) {
+		padding: 0 map-get($grid-container-padding, 'md');
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 0 map-get($grid-container-padding, 'lg');
+	}
+}
